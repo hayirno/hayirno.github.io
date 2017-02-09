@@ -1,1 +1,0 @@
-# herdildehayir.github.io
