@@ -214,8 +214,9 @@ input {color: #666666;}
 		left: 10px;
 	}
 	.country-information {
-		margin-top: -260px;
+		margin-top: 0;
 		height: 130px;
+		top: 20px;
 	}
 	
 	.container {
