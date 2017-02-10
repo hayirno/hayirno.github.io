@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8" />
+	<title>Her Dilde #hayır - Demokratik Bir Türkiye İçin Her Dilde HAYIR!</title>
+	<meta name="description" content="16 Nisan 2017 tarihinde yapılacak olan anayasa değişikliği referandumu için yürütülen HAYIR kampanyası anasayfası. Tüm dillerde HAYIR diyoruz."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/styles.css"> 
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var windowW = $(window).width();  
+			setTimeout(function(){
+				$('.loading').css('display', 'none');
+				$('.page').fadeIn(300);
+			}, 2000);
+			if(windowW < 768){
+				$('.counter-list').css('display', 'none');
+				$('.page ul li').removeClass('active');
+			}
+			elmChange(windowW); 
+		}); 
+		function elmChange(windowW){ 
+			$('.page ul li').css('width', $(window).width() / 20);
+			$('.page ul li').css('height', ($(window).height() / 16));
+			var elmLength = $('.page ul li').length; 
+			setTimeout(function(){
+				setInterval(function(){
+					var timeout = Math.floor(Math.random() * elmLength + 1);
+					if(windowW > 768){
+						$('.page ul li').removeClass('active');
+						$('.page ul li:nth-child('+ timeout +')').addClass('active');
+					}
+					$('.country-information-title h1').html($('.page ul li:nth-child('+ timeout +')').attr('data-language') + ' :<b>'+ $('.page ul li:nth-child('+ timeout +')').attr('data-text') +'</b>' );
+				}, 2000); 
+			}, 2000);		
+		} 
+	</script>
+</head>
+<body>
+	<div class="loading">
+		<div class="loader">
+			<div class="loader-inner"></div>
+		</div>
+	</div>
+	<div class="page">
+		<div class="counter-list">
+			<ul>
+				<li data-country="Afganistan" data-language="Farsça" data-text="Nah">
+					<img src="images/Afghanistan.png"/>
+				</li>
+				<li data-country="Arnavutluk" data-language="Arnavutça" data-text="Jo">
+					<img src="images/Albania.png"/>
+				</li>
+				<li data-country="Ermenistan" data-language="Ermenice" data-text="Che" >
+					<img src="images/Armenia.png"/>
+				</li>
+				<li data-country="Azerbaycan" data-language="Azerice" data-text="Xeyr">
+					<img src="images/Azerbaijan.png"/>
+				</li>
+				<li data-country="Bosna Hersek" data-language="Boşnakça" data-text="Ne">
+					<img src="images/Bosnia.png" alt="" />
+				</li>
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Hollanda" data-language="Felemenkçe" data-text="Nee">
+					<img src="images/Netherlands.png" alt="" />
+				</li>
+				<li data-country="Norveç" data-language="Norveççe" data-text="Nei">
+					<img src="images/Norway.png" alt="" />
+				</li>
+				<li data-country="Portekiz" data-language="Portekizce" data-text="Não">
+					<img src="images/Portugal.png" alt="" />
+				</li>
+				<li data-country="Romanya" data-language="Romence" data-text="Nu">
+					<img src="images/Romania.png" alt="" />
+				</li>
+				<li data-country="Rusya" data-language="Rusça" data-text="Nyet (Нет)">
+					<img src="images/Russian_Federation.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="İspanya" data-language="İspanyolca" data-text="No">
+					<img src="images/Spain.png" alt="" />
+				</li>
+				<li data-country="İsçivre" data-language="İsveççe" data-text="Nej">
+					<img src="images/Sweden.png" alt="" />
+				</li>
+				<li class="active" data-country="Türkiye" data-language="Türkçe" data-text="HAYIR">
+					<img src="images/Turkey.png" alt="" />
+				</li>
+				<li data-country="Türkmenistan" data-language="Türkmence" data-text="Yok">
+					<img src="images/Turkmenistan.png" alt="" />
+				</li>
+				<li data-country="Ukrayna" data-language="Ukraynaca" data-text="Ni (Немає)">
+					<img src="images/Ukraine.png" alt="" />
+				</li>
+				<li data-country="İngiltere/ABD" data-language="İngilizce" data-text="No">
+					<img src="images/United_Kingdom.png" alt="" />
+				</li>   
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Afganistan" data-language="Farsça" data-text="Nah">
+					<img src="images/Afghanistan.png"/>
+				</li>
+				<li data-country="Arnavutluk" data-language="Arnavutça" data-text="Jo">
+					<img src="images/Albania.png"/>
+				</li>
+				<li data-country="Ermenistan" data-language="Ermenice" data-text="Che" >
+					<img src="images/Armenia.png"/>
+				</li>
+				<li data-country="Azerbaycan" data-language="Azerice" data-text="Xeyr">
+					<img src="images/Azerbaijan.png"/>
+				</li>
+				<li data-country="Bosna Hersek" data-language="Boşnakça" data-text="Ne">
+					<img src="images/Bosnia.png" alt="" />
+				</li>
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Hollanda" data-language="Felemenkçe" data-text="Nee">
+					<img src="images/Netherlands.png" alt="" />
+				</li>
+				<li data-country="Norveç" data-language="Norveççe" data-text="Nei">
+					<img src="images/Norway.png" alt="" />
+				</li>
+				<li data-country="Portekiz" data-language="Portekizce" data-text="Não">
+					<img src="images/Portugal.png" alt="" />
+				</li>
+				<li data-country="Romanya" data-language="Romence" data-text="Nu">
+					<img src="images/Romania.png" alt="" />
+				</li>
+				<li data-country="Rusya" data-language="Rusça" data-text="Nyet (Нет)">
+					<img src="images/Russian_Federation.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="İspanya" data-language="İspanyolca" data-text="No">
+					<img src="images/Spain.png" alt="" />
+				</li>
+				<li data-country="İsçivre" data-language="İsveççe" data-text="Nej">
+					<img src="images/Sweden.png" alt="" />
+				</li>
+				<li data-country="Türkiye" data-language="Türkçe" data-text="HAYIR">
+					<img src="images/Turkey.png" alt="" />
+				</li>
+				<li data-country="Türkmenistan" data-language="Türkmence" data-text="Yok">
+					<img src="images/Turkmenistan.png" alt="" />
+				</li>
+				<li data-country="Ukrayna" data-language="Ukraynaca" data-text="Ni (Немає)">
+					<img src="images/Ukraine.png" alt="" />
+				</li>
+				<li data-country="İngiltere/ABD" data-language="İngilizce" data-text="No">
+					<img src="images/United_Kingdom.png" alt="" />
+				</li>   
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Afganistan" data-language="Farsça" data-text="Nah">
+					<img src="images/Afghanistan.png"/>
+				</li>
+				<li data-country="Arnavutluk" data-language="Arnavutça" data-text="Jo">
+					<img src="images/Albania.png"/>
+				</li>
+				<li data-country="Ermenistan" data-language="Ermenice" data-text="Che" >
+					<img src="images/Armenia.png"/>
+				</li>
+				<li data-country="Azerbaycan" data-language="Azerice" data-text="Xeyr">
+					<img src="images/Azerbaijan.png"/>
+				</li>
+				<li data-country="Bosna Hersek" data-language="Boşnakça" data-text="Ne">
+					<img src="images/Bosnia.png" alt="" />
+				</li>
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Hollanda" data-language="Felemenkçe" data-text="Nee">
+					<img src="images/Netherlands.png" alt="" />
+				</li>
+				<li data-country="Norveç" data-language="Norveççe" data-text="Nei">
+					<img src="images/Norway.png" alt="" />
+				</li>
+				<li data-country="Portekiz" data-language="Portekizce" data-text="Não">
+					<img src="images/Portugal.png" alt="" />
+				</li>
+				<li data-country="Romanya" data-language="Romence" data-text="Nu">
+					<img src="images/Romania.png" alt="" />
+				</li>
+				<li data-country="Rusya" data-language="Rusça" data-text="Nyet (Нет)">
+					<img src="images/Russian_Federation.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="İspanya" data-language="İspanyolca" data-text="No">
+					<img src="images/Spain.png" alt="" />
+				</li>
+				<li data-country="İsçivre" data-language="İsveççe" data-text="Nej">
+					<img src="images/Sweden.png" alt="" />
+				</li>
+				<li data-country="Türkiye" data-language="Türkçe" data-text="HAYIR">
+					<img src="images/Turkey.png" alt="" />
+				</li>
+				<li data-country="Türkmenistan" data-language="Türkmence" data-text="Yok">
+					<img src="images/Turkmenistan.png" alt="" />
+				</li>
+				<li data-country="Ukrayna" data-language="Ukraynaca" data-text="Ni (Немає)">
+					<img src="images/Ukraine.png" alt="" />
+				</li>
+				<li data-country="İngiltere/ABD" data-language="İngilizce" data-text="No">
+					<img src="images/United_Kingdom.png" alt="" />
+				</li>   
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Afganistan" data-language="Farsça" data-text="Nah">
+					<img src="images/Afghanistan.png"/>
+				</li>
+				<li data-country="Arnavutluk" data-language="Arnavutça" data-text="Jo">
+					<img src="images/Albania.png"/>
+				</li>
+				<li data-country="Ermenistan" data-language="Ermenice" data-text="Che" >
+					<img src="images/Armenia.png"/>
+				</li>
+				<li data-country="Azerbaycan" data-language="Azerice" data-text="Xeyr">
+					<img src="images/Azerbaijan.png"/>
+				</li>
+				<li data-country="Bosna Hersek" data-language="Boşnakça" data-text="Ne">
+					<img src="images/Bosnia.png" alt="" />
+				</li>
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Hollanda" data-language="Felemenkçe" data-text="Nee">
+					<img src="images/Netherlands.png" alt="" />
+				</li>
+				<li data-country="Norveç" data-language="Norveççe" data-text="Nei">
+					<img src="images/Norway.png" alt="" />
+				</li>
+				<li data-country="Portekiz" data-language="Portekizce" data-text="Não">
+					<img src="images/Portugal.png" alt="" />
+				</li>
+				<li data-country="Romanya" data-language="Romence" data-text="Nu">
+					<img src="images/Romania.png" alt="" />
+				</li>
+				<li data-country="Rusya" data-language="Rusça" data-text="Nyet (Нет)">
+					<img src="images/Russian_Federation.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="İspanya" data-language="İspanyolca" data-text="No">
+					<img src="images/Spain.png" alt="" />
+				</li>
+				<li data-country="İsçivre" data-language="İsveççe" data-text="Nej">
+					<img src="images/Sweden.png" alt="" />
+				</li>
+				<li data-country="Türkiye" data-language="Türkçe" data-text="HAYIR">
+					<img src="images/Turkey.png" alt="" />
+				</li>
+				<li data-country="Türkmenistan" data-language="Türkmence" data-text="Yok">
+					<img src="images/Turkmenistan.png" alt="" />
+				</li>
+				<li data-country="Ukrayna" data-language="Ukraynaca" data-text="Ni (Немає)">
+					<img src="images/Ukraine.png" alt="" />
+				</li>
+				<li data-country="İngiltere/ABD" data-language="İngilizce" data-text="No">
+					<img src="images/United_Kingdom.png" alt="" />
+				</li>   
+				<li data-country="Bulgaristan" data-language="Bulgarca" data-text="Ne">
+					<img src="images/Bulgaria.png" alt="" />
+				</li>
+				<li data-country="Çin" data-language="Çince" data-text="Mhai">
+					<img src="images/China.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="Arap Emirliği" data-language="Arapça" data-text="Laa (لا)">
+					<img src="images/Saudi_Arabia.png" alt="" />
+				</li>
+				<li data-country="Sırbistan" data-language="Sırpça" data-text="He">
+					<img src="images/Serbia.png" alt="" />
+				</li>
+				<li data-country="Slovakya" data-language="Slovakça" data-text="Nie">
+					<img src="images/Slovakia.png" alt="" />
+				</li>
+				<li data-country="Slovenya" data-language="Slovence" data-text="No">
+					<img src="images/Slovenia.png" alt="" />
+				</li>
+				<li data-country="Somali" data-language="Somalice" data-text="No">
+					<img src="images/Somalia.png" alt="" />
+				</li>
+				<li data-country="Afrika" data-language="Afrikaanca" data-text="Geen">
+					<img src="images/South_Africa.png" alt="" />
+				</li>
+				<li data-country="Hırvatistan" data-language="Hırvatça" data-text="Ne">
+					<img src="images/Croatia.png" alt="" />
+				</li>
+				<li data-country="Çek Cumhuriyeti" data-language="Çekçe" data-text="Ne">
+					<img src="images/Czech_Republic.png" alt="" />
+				</li>
+				<li data-country="Estonya" data-language="Estonyaca" data-text="Ei">
+					<img src="images/Estonia.png"/>
+				</li>
+				<li data-country="Fransa" data-language="Fransızca" data-text="Non">
+					<img src="images/France.png" alt="" />
+				</li>
+				<li data-country="Almanya" data-language="Almanca" data-text="Nein">
+					<img src="images/Germany.png" alt="" />
+				</li>
+				<li data-country="Yunanistan" data-language="Yunanca" data-text="Ohi">
+					<img src="images/Greece.png" alt="" />
+				</li>
+				<li data-country="Macaristan" data-language="Macarca" data-text="Nem">
+					<img src="images/Hungary.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="İzlanda" data-language="İzlandaca" data-text="Nei">
+					<img src="images/Iceland.png" alt="" />
+				</li>
+				<li data-country="Hindistan" data-language="Hintçe" data-text="Na (नहीं)">
+					<img src="images/India.png" alt="" />
+				</li>
+				<li data-country="Endonezya" data-language="Endonezce" data-text="Ora">
+					<img src="images/Indonesia.png" alt="" />
+				</li>
+				<li data-country="İran" data-language="Kürtçe" data-text="Na">
+					<img src="images/Iran.png" alt="" />
+				</li>
+				<li data-country="İrlanda" data-language="İrlandaca" data-text="Níl">
+					<img src="images/Ireland.png" alt="" />
+				</li>
+				<li data-country="İtalya" data-language="İtalyanca" data-text="No">
+					<img src="images/Italy.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li>
+				<li data-country="Myanmar" data-language="Birmanca" data-text="Mahou'hpu">
+					<img src="images/Myanmar.png" alt="" />
+				</li>
+				<li data-country="Japonya" data-language="Japonca" data-text="Iie (いいえ)">
+					<img src="images/Japan.png" alt="" />
+				</li>
+				<li data-country="Kazakistan" data-language="Kazakça" data-text="Zhoq (жоқ)">
+					<img src="images/Kazakhstan.png" alt="" />
+				</li>
+				<li data-country="Kırgızistan" data-language="Kırgızca" data-text="Jok (Жок)">
+					<img src="images/Kyrgyzstan.png" alt="" />
+				</li>
+				<li data-country="Makedyonya" data-language="Makedonca" data-text="He">
+					<img src="images/Macedonia.png" alt="" />
+				</li> 
+			</ul>
+		</div>
+		<div class="country-information">
+			<div class="country-information-title"><h1>Türkçe : HAYIR</h1></div> 
+			<div class="country-information-link">
+				<a href="neden-hayir.html"><h3>Neden Hayır?</h3></a>
+				<a href="baskanlik-gelirse.html"><h3>Başkanlık Gelirse Ne Olur?</h3></a>
+			</div>
+			<div class="poll-iframe">
+				<iframe src="https://www.poltio.com/embed/90962/anayasa-degisikligi-referandumunda-oyunuz?utm_source=embed&utm_medium=hayirno&utm_campaign=90962" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" scrolling="no"></iframe>
+			</div>
+		</div> 
+	</div> 
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-91639891-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
